@@ -1,0 +1,9 @@
+# dsh-ecosystem-radar bundle patch.
+#
+# 插入一行：本包自身。它是真正的 cordis 插件（lib/index.js），dsh 直接按包名
+# 从 profile import，不依赖 PATH 上的任何可执行文件。加载后在 webServer 上挂
+# /dsh-ecosystem-radar 出口，客户端注册侧栏图标 + 主区面板。
+
+- insert:
+    - id: ecosystem-radar
+      name: '@deepwhale-cn/dsh-ecosystem-radar'

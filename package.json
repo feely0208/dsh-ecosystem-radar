@@ -1,0 +1,52 @@
+{
+  "name": "@deepwhale-cn/dsh-ecosystem-radar",
+  "version": "0.1.0",
+  "description": "深鲸生态雷达：把本机雷达快照做成插件面板 —— 近 7 天新增、行业空位榜、每日增量报告，一眼看清 DSH 插件生态的供给分布",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ecosystem",
+    "radar",
+    "market",
+    "生态",
+    "插件市场"
+  ],
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "dsh": ">=0.1.0-rc.6 <0.3.0",
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feely0208/dsh-ecosystem-radar.git"
+  },
+  "author": "温州深鲸智能科技有限公司 <contact@deepwhale.org.cn>",
+  "homepage": "https://deepwhale.org.cn",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./client": "./lib/client.js"
+  }
+}
