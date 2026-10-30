@@ -19,7 +19,8 @@
     "assets",
     "cordis.patch.yml",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "scripts"
   ],
   "dsh": {
     "bundle": {
@@ -48,5 +49,9 @@
     ".": "./lib/index.js",
     "./package.json": "./package.json",
     "./client": "./lib/client.js"
+  },
+  "scripts": {
+    "prepublishOnly": "node scripts/preflight-client.mjs .",
+    "preflight": "node scripts/preflight-client.mjs ."
   }
 }
