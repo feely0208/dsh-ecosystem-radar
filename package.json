@@ -1,6 +1,6 @@
 {
   "name": "@deepwhale-cn/dsh-ecosystem-radar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "深鲸生态雷达：把本机雷达快照做成插件面板 —— 近 7 天新增、行业空位榜、每日增量报告，一眼看清 DSH 插件生态的供给分布",
   "type": "module",
   "license": "MIT",
